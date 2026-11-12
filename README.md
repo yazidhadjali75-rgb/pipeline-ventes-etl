@@ -1,69 +1,57 @@
-# 📊 Analyse des ventes — Pipeline ETL & Data Analytics
+# 📊 Analyse des ventes — Projet Data Engineering
 
 ## Présentation
 
-Ce projet consiste à développer un pipeline ETL permettant de collecter, nettoyer, transformer et analyser des données commerciales.
+Développement d'un pipeline ETL permettant de nettoyer, transformer et analyser des données commerciales.
 
-L'objectif est de transformer des données brutes en informations exploitables grâce à Python, SQL et aux outils Google, puis de créer un tableau de bord interactif.
+L'objectif est de transformer des données brutes en informations exploitables et de créer un dashboard interactif.
 
 ## Technologies utilisées
 
 - **Python & Pandas** : nettoyage et transformation des données.
-- **Google BigQuery** : stockage des données dans le cloud.
-- **SQL** : analyse et agrégation des ventes.
+- **SQL & Google BigQuery** : stockage et analyse des ventes.
 - **Google Sheets** : conservation des données nettoyées.
-- **Looker Studio** : création du tableau de bord interactif.
-- **Git & GitHub** : gestion et partage du projet.
+- **Looker Studio** : visualisation des résultats.
+- **Git & GitHub** : gestion du projet.
 
 ## Pipeline ETL
 
-1. **Extract** : importation des données depuis un fichier CSV.
-2. **Transform** : suppression des doublons, nettoyage des produits, uniformisation des villes, traitement des valeurs manquantes et calcul du chiffre d'affaires.
-3. **Load** : chargement des données nettoyées dans Google BigQuery.
-
-Les données sont ensuite analysées avec SQL, conservées dans Google Sheets et visualisées avec Looker Studio.
-
-## Analyses réalisées
-
-- Chiffre d'affaires total.
-- Nombre de ventes et quantités vendues.
-- Performance des ventes par ville.
-- Analyse du chiffre d'affaires par produit.
+1. Extraction des données depuis un fichier CSV.
+2. Nettoyage et transformation avec Python et Pandas.
+3. Suppression des doublons et traitement des valeurs manquantes.
+4. Calcul du chiffre d'affaires.
+5. Chargement des données dans BigQuery.
+6. Analyse SQL et création d'un dashboard.
 
 ## Résultats
 
-| Indicateur | Résultat |
-|---|---:|
-| Nombre de ventes | 9 |
-| Quantité totale vendue | 24 |
-| Chiffre d'affaires total | 3 465 |
+| Indicateur               | Résultat |
+| ------------------------ | -------: |
+| Nombre de ventes         |        9 |
+| Quantité vendue          |       24 |
+| Chiffre d'affaires total |    3 465 |
 
-**Meilleur produit en chiffre d'affaires :** Ordinateur (2 250).
+- Ville la plus performante : Paris.
+- Produit avec le chiffre d'affaires le plus élevé : Ordinateur.
 
-**Ville avec le chiffre d'affaires le plus élevé :** Paris (2 130).
+## Dashboard et données
 
-## Dashboard
+- **Dashboard Looker Studio :** [https://datastudio.google.com/reporting/b8082a49-dade-4e74-8bb1-5e8cd9e59f36](https://datastudio.google.com/reporting/b8082a49-dade-4e74-8bb1-5e8cd9e59f36)
+- **Google Sheets :**[https://docs.google.com/spreadsheets/d/1qQ6CcTyout0fI5x84Q06CiWcyEDm2abytYig_AM0Dqs/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1qQ6CcTyout0fI5x84Q06CiWcyEDm2abytYig_AM0Dqs/edit?usp=sharing)
 
-Tableau de bord interactif réalisé avec Looker Studio.
-
-- **Dashboard :** À compléter
-- **Google Sheets :** À compléter
-
-## Installation et exécution
-
-Installer les dépendances :
+## Installation
 
 ```bash
 pip install pandas google-cloud-bigquery
 ```
 
-Configurer l'authentification Google Cloud :
+Authentification Google Cloud :
 
 ```bash
 gcloud auth application-default login
 ```
 
-Exécuter le pipeline :
+Exécution :
 
 ```bash
 python pipeline-ventes-etl.py
@@ -71,7 +59,7 @@ python pipeline-ventes-etl.py
 
 ## Compétences développées
 
-Python, Pandas, ETL, SQL, Google BigQuery, Google Sheets, Looker Studio, Data Cleaning, Data Analytics et GitHub.
+ETL · Python · Pandas · SQL · BigQuery · Data Cleaning · Data Analytics · Looker Studio · GitHub
 
 ## Auteur
 
