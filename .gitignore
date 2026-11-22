@@ -5,3 +5,4 @@ __pycache__/
 .env
 *service-account*.json
 *credentials*.json
+data/ventes_nettoyees.csv
