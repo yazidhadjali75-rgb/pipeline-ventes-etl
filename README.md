@@ -54,6 +54,7 @@ gcloud auth application-default login
 Exécution :
 
 ```bash
+pip install -r requirements.txt 
 python pipeline-ventes-etl.py
 ```
 
